@@ -11,10 +11,10 @@ int i=3;
 
 
 void main(void) {
-    TRISBbits.TRISB0=1;
-    TRISBbits.TRISB1=0;
+    TRISBbits.TRISB0=1;// connect Push button to pin  PORT B0  pulldown to ground with 10K resister
+    TRISBbits.TRISB1=0;// connect LED to pin  PORT B1
     while(1)
-    { if ((RB0 ==1)&&(i==3))
+    { if ((RB0 ==1)&&(i==3))//if button is Pressed
     {while(RB0==1){RB1=1;
         i=1;}
         
